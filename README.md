@@ -1,37 +1,38 @@
-# Bài tập Bảng Quản Lý Sản Phẩm (API)
+# Bài tập bảng quản lý sản phẩm (API)
 
 ## Mô tả
-Bài tập sử dụng API:
+Sử dụng API:
 
 https://api.escuelajs.co/api/v1/products
 
-Hiển thị danh sách sản phẩm dưới dạng bảng quản lý bằng HTML + JavaScript.
+Hiển thị danh sách sản phẩm dưới dạng bảng quản lý bằng HTML và JavaScript.
 
 ---
 
-## Chức năng
+## Yêu cầu bài tập
 
 - Lấy dữ liệu sản phẩm (GET ALL)
-- Hiển thị bảng có CSS 1 dòng đen – 1 dòng trắng
-- Hiển thị hình ảnh sản phẩm
+- CSS bảng 1 dòng đen – 1 dòng trắng
+- Hiển thị toàn bộ hình ảnh
 - Tìm kiếm theo title (onChange)
 - Phân trang dữ liệu (5 / 10 / 20 mỗi trang)
 - Sắp xếp theo giá tăng/giảm
 - Sắp xếp theo tên tăng/giảm
+- Nộp Github gồm file HTML và JS
 
 ---
 
 ## Công nghệ sử dụng
 
-- HTML
-- CSS
+- HTML  
+- CSS  
 - JavaScript (Fetch API)
 
 ---
 
 ## Cấu trúc thư mục
 
-baitap_api
+NNPTUD_3
 ├── index.html
 ├── main.js
 └── README.md
@@ -41,8 +42,7 @@ baitap_api
 
 ## Cách chạy
 
-1. Mở file `index.html` bằng trình duyệt
-2. Dữ liệu sẽ tự động load từ API
+Mở file `index.html` bằng trình duyệt.
 
 ---
 
