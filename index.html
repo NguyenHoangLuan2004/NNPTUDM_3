@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bảng quản lý</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f2f2f2;
+padding:20px;
+}
+
+.box{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 0 10px #ccc;
+}
+
+.control{
+margin-bottom:10px;
+}
+
+input,select,button{
+padding:6px;
+margin-right:5px;
+}
+
+button{
+background:#0066ff;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:black;
+color:white;
+padding:8px;
+}
+
+td{
+border:1px solid #ccc;
+padding:8px;
+text-align:center;
+}
+
+/* 1 dòng đen – 1 dòng trắng */
+tr:nth-child(even){background:#eee;}
+tr:nth-child(odd){background:white;}
+
+img{
+width:80px;
+height:80px;
+object-fit:cover;
+}
+
+#pages{
+text-align:center;
+margin-top:10px;
+}
+
+#pages button{
+margin:3px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>BẢNG QUẢN LÝ SẢN PHẨM</h2>
+
+<div class="control">
+
+<input id="search" placeholder="Tìm title..." onchange="timKiem()">
+
+<select onchange="doiSoDong(this.value)">
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="20">20</option>
+</select>
+
+<button onclick="sapXepGia()">Sort giá</button>
+<button onclick="sapXepTen()">Sort tên</button>
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Title</th>
+<th>Price</th>
+<th>Image</th>
+</tr>
+</thead>
+
+<tbody id="data"></tbody>
+</table>
+
+<div id="pages"></div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
